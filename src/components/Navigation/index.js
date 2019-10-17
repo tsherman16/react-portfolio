@@ -27,27 +27,37 @@ export default class Example extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
-        <Container>
-          <NavbarBrand>Tim Sherman</NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink to="/home" style={{
-                  marginRight: "20px"
-                }}>About Me</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to="#" style={{
-                  marginRight: "20px"
-                }}>Contact</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to="#">Portfolio</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
+        <Navbar color="dark" light expand="md">
+          <Container>
+            <NavbarBrand style={{color: "white"}}>Tim Sherman</NavbarBrand>
+            <NavbarToggler onClick={this.toggle} />
+            <Collapse isOpen={this.state.isOpen} navbar>
+              <Nav className="ml-auto" navbar>
+                <NavItem style={{marginTop: "10px"}}>
+                  <NavLink to="/home" style={{
+                    marginRight: "10px",
+                    marginLeft: "10px",
+                    color: "white"
+                  }}>About Me</NavLink>
+                </NavItem>
+                <p style={{color: "white", marginTop: "10px"}}>|</p>
+              <NavItem style={{marginTop: "10px"}}>
+                  <NavLink to="/contact" style={{
+                    marginRight: "10px",
+                    marginLeft: "10px",
+                    color: "white"
+                  }}>Contact</NavLink>
+                </NavItem>
+                <p style={{color: "white", marginTop: "10px"}}>|</p>
+              <NavItem style={{marginTop: "10px"}}>
+                  <NavLink to="/portfolio" style={{
+                    marginRight: "10px",
+                    marginLeft: "10px",
+                    color: "white"
+                  }}>Portfolio</NavLink>
+                </NavItem>
+              </Nav>
+            </Collapse>
           </Container>
         </Navbar>
       </div>
