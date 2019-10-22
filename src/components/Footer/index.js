@@ -5,7 +5,7 @@ import { Row, Col } from "reactstrap";
 function Footer() {
     return (
         <div>
-            <Row className="text-center py-1 fixed-bottom" style={{ background: "black" }}>
+            <Row className="text-center py-1" style={{ background: "black" }}>
                 <Col>
                     <p style={{ marginTop: "8px", color: "white" }}>
                         Github:

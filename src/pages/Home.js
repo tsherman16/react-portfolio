@@ -11,15 +11,22 @@ const myPicStyle = {
     height: "300px",
     width: "200px"
 }
+const background = {
+    height: "100vh",
+    backgroundRepeat: "no-repeat",
+    backgroundImage: `url(https://cdn.pixabay.com/photo/2017/02/14/09/02/wood-2065366__480.jpg)`,
+    backgroundSize: "cover",
+    backgroundAttachment: "fixed"
+}
 
 function Home() {
     return (
-        <div>
-            <Container className= "border border-dark" 
-            style={{marginTop: "70px", padding: "30px", backgroundColor: "white"}}>
+        <div style={background}>
+            <Container>
                 <Row>
-                    <Col>
-                        <Row style={{marginBottom: "20px"}}>
+                    <Col className="border border-dark shadow-lg rounded"
+                        style={{ marginTop: "150px", padding: "40px", backgroundColor: "white" }}>
+                        <Row style={{ marginBottom: "20px" }}>
                             <Col>
                                 <h1>About Me</h1>
                                 <hr />
